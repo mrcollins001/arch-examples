@@ -1,0 +1,10 @@
+/Users/brianhoffman/Projects/arch-network/examples/helloworld/program/target/sbf-solana-solana/release/deps/libthiserror-90eb63c7e9440a8d.rmeta: /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/lib.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/aserror.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/display.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/provide.rs
+
+/Users/brianhoffman/Projects/arch-network/examples/helloworld/program/target/sbf-solana-solana/release/deps/libthiserror-90eb63c7e9440a8d.rlib: /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/lib.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/aserror.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/display.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/provide.rs
+
+/Users/brianhoffman/Projects/arch-network/examples/helloworld/program/target/sbf-solana-solana/release/deps/thiserror-90eb63c7e9440a8d.d: /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/lib.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/aserror.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/display.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/provide.rs
+
+/Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/lib.rs:
+/Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/aserror.rs:
+/Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/display.rs:
+/Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.63/src/provide.rs:

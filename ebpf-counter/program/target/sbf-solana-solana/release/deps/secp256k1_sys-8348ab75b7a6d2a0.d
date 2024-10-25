@@ -1,0 +1,10 @@
+/Users/brianhoffman/Projects/arch-network/examples/ebpf-counter/program/target/sbf-solana-solana/release/deps/libsecp256k1_sys-8348ab75b7a6d2a0.rmeta: /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/lib.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/macros.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/types.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/recovery.rs
+
+/Users/brianhoffman/Projects/arch-network/examples/ebpf-counter/program/target/sbf-solana-solana/release/deps/libsecp256k1_sys-8348ab75b7a6d2a0.rlib: /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/lib.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/macros.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/types.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/recovery.rs
+
+/Users/brianhoffman/Projects/arch-network/examples/ebpf-counter/program/target/sbf-solana-solana/release/deps/secp256k1_sys-8348ab75b7a6d2a0.d: /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/lib.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/macros.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/types.rs /Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/recovery.rs
+
+/Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/lib.rs:
+/Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/macros.rs:
+/Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/types.rs:
+/Users/brianhoffman/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-sys-0.9.2/src/recovery.rs:
