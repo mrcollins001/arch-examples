@@ -17,6 +17,44 @@ A basic example demonstrating eBPF program implementation for packet counting in
   - Packet counting implementation
   - Integration with Arch Network
   - Tracing and logging functionality
+  - Performance metrics visualization
+  - Real-time packet analysis
+
+### Hello World
+A simple starter example to understand the basics of Arch Network programming.
+
+- Location: `/examples/helloworld`
+- Features:
+  - Basic program structure and deployment
+  - Account management and transactions
+  - Message signing and verification
+  - State management examples
+  - Integration with Bitcoin transactions
+  - Cross-program invocation examples
+
+### Oracle
+A demonstration of how to implement an oracle service on Arch Network.
+
+- Location: `/examples/oracle`
+- Features:
+  - External data fetching and validation
+  - Secure data transmission
+  - State updates based on external triggers
+  - Multi-signature verification
+  - Error handling and recovery mechanisms
+  - Real-time data feed implementation
+
+### Fungible Token Standard
+An implementation of a fungible token standard for Arch Network.
+
+- Location: `/examples/fungible-token-standard`
+- Features:
+  - Token creation and management
+  - Transfer functionality
+  - Balance tracking
+  - Account authorization
+  - Standard token interface implementation
+  - Integration with Bitcoin's UTXO model
 
 ## Prerequisites
 
