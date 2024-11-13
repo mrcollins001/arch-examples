@@ -37,10 +37,9 @@ A basic example demonstrating eBPF program implementation for packet counting in
    cd examples/ebpf-counter
    ```
 
-3. Build and run:
+3. Build and they are ready to deploy:
    ```bash
-   cargo build
-   cargo run
+   cargo build-sbf
    ```
 
 ## Project Structure
