@@ -72,24 +72,23 @@ An implementation of a fungible token standard for Arch Network.
 
 2. Choose an example directory:
    ```bash
-   cd examples/ebpf-counter
+   cd examples/ebpf-counter/program
    ```
 
-3. Build and they are ready to deploy:
+3. Build and it is ready to be deployed:
    ```bash
-   cargo build-sbf
+   cargo-build-sbf
    ```
 
 ## Project Structure
 
 Each example follows a consistent structure:
 
-example-name/
-├── src/ # Source code
-├── Cargo.toml # Dependencies and project configuration
-├── README.md # Example-specific documentation
-└── tests/ # Test files
-
+example-name/ </br>
+├── src/ # Source code </br>
+├── Cargo.toml # Dependencies and project configuration </br>
+├── README.md # Example-specific documentation </br>
+└── tests/ # Test files </br>
 
 ## Contributing
 
@@ -98,18 +97,20 @@ We welcome contributions! If you have an example you'd like to add:
 1. Fork the repository
 2. Create a new branch for your example
 3. Add your example following the existing structure
-4. Submit a pull request
+4. Submit a [pull request](https://github.com/Arch-Network/arch-examples/pulls)
 
+<!-- temporarily hiding until license is determined
 ## License
 
 This project is licensed under [LICENSE_NAME] - see the LICENSE file for details.
+-->
 
 ## Support
 
 For questions and support:
-- Open an issue in this repository
-- Join our [Community Discord/Forum]
-- Visit our [Documentation]
+- Open an [issue](https://github.com/Arch-Network/arch-examples/issues) in this repository
+- Join our [Community Discord/Forum](https://www.discord.gg/Arch-Network)
+- Visit our [Documentation](https://docs.arch.network/)
 
 ## Additional Resources
 
