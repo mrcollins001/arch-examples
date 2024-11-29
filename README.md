@@ -84,11 +84,13 @@ An implementation of a fungible token standard for Arch Network.
 
 Each example follows a consistent structure:
 
-example-name/ </br>
-├── src/ # Source code </br>
-├── Cargo.toml # Dependencies and project configuration </br>
-├── README.md # Example-specific documentation </br>
-└── tests/ # Test files </br>
+```bash
+example-name/
+├─ Cargo.toml # Dependencies and project configuration
+├─ program/ # Source code
+├─ README.md # Example-specific documentation
+├─ src/ # Test files
+```
 
 ## Contributing
 
