@@ -1,0 +1,119 @@
+// src/lib.rs
+#![cfg_attr(not(feature = "std"), no_std)]
+
+use ink_lang as ink;
+
+#[ink::contract]
+mod token_contract {
+    use ink_storage::collections::HashMap as StorageHashMap;
+
+    #[ink(storage)]
+    pub struct TokenContract {
+        owner: AccountId,
+        total_supply: Balance,
+        balances: StorageHashMap<AccountId, Balance>,
+        token_details: TokenMintDetails,
+    }
+
+    #[derive(scale::Encode, scale::Decode, Clone, PartialEq, Eq)]
+    pub struct TokenMintDetails {
+        owner: [u8; 32],
+        pub status: MintStatus,
+        pub supply: u64,             // in lowest denomination
+        pub circulating_supply: u64, // in lowest denomination
+        pub ticker: String,
+        pub decimals: u8,
+        token_metadata: StorageHashMap<String, [u8; 32]>,
+    }
+
+    #[ink(event)]
+    pub struct Transfer {
+        #[ink(topic)]
+        from: AccountId,
+        #[ink(topic)]
+        to: AccountId,
+        value: Balance,
+    }
+
+    #[ink(event)]
+    pub struct Mint {
+        #[ink(topic)]
+        to: AccountId,
+        value: Balance,
+    }
+
+    impl TokenContract {
+        #[ink(constructor)]
+        pub fn new() -> Self {
+            let owner = Self::env().caller();
+            let token_details = TokenMintDetails {
+                owner: [0; 32], // Set your owner address here
+                status: MintStatus::Active,
+                supply: 100_000, // Set initial supply to 100,000
+                circulating_supply: 100_000, // Set initial circulating supply to 100,000
+                ticker: String::from("CLS"), // Set token name to "CLS"
+                decimals: 18, // You can set the number of decimals as needed
+                token_metadata: StorageHashMap::new(),
+            };
+
+            Self {
+                owner,
+                total_supply: 100_000, // Set total supply to 100,000
+                balances: StorageHashMap::new(),
+                token_details,
+            }
+        }
+
+        #[ink(message)]
+        pub fn mint(&mut self, to: AccountId, value: Balance) {
+            self.total_supply += value;
+            self.balances.insert(to, self.balances.get(&to).unwrap_or(&0) + value);
+            self.token_details.circulating_supply += value;
+
+            self.env().emit_event(Mint { to, value });
+        }
+
+        #[ink(message)]
+        pub fn transfer(&mut self, to: AccountId, value: Balance) -> Result<(), &'static str> {
+            let from = self.env().caller();
+            let from_balance = self.balances.get(&from).unwrap_or(&0);
+
+            if *from_balance < value {
+                return Err("Insufficient balance");
+            }
+
+            self.balances.insert(from, from_balance - value);
+            self.balances.insert(to, self.balances.get(&to).unwrap_or(&0) + value);
+
+            self.env().emit_event(Transfer { from, to, value });
+            Ok(())
+        }
+    }
+
+    #[derive(scale::Encode, scale::Decode, Clone, Copy, PartialEq, Eq)]
+    pub enum MintStatus {
+        Active,
+        Paused,
+        Closed,
+    }
+}
+impl TokenContract {
+    #[ink(message)]
+    pub fn burn(&mut self, value: Balance) -> Result<(), &'static str> {
+        let from = self.env().caller();
+        let from_balance = self.balances.get(&from).unwrap_or(&0);
+
+        if *from_balance < value {
+            return Err("Insufficient balance to burn");
+        }
+
+        self.balances.insert(from, from_balance - value);
+        self.total_supply -= value;
+        self.token_details.circulating_supply -= value;
+
+        // Emit a Burn event (you may want to define this event)
+        // self.env().emit_event(Burn { from, value });
+
+        Ok(())
+    }
+}
